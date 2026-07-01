@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-aman: #205A28; /* Hijau */
+  --color-waspada: #F9A825; /* Kuning */
+  --color-siaga: #EF6C00; /* Oranye */
+  --color-awas: #C62828; /* Merah */
+  --color-brand: #106EBE; /* Biru */
+  --color-bg-neutral: #FFFDF2; /* Krem */
+  --color-text: #333333;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-bg-neutral);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Customization */
+.navbar-brand {
+  font-weight: 700;
+  color: var(--color-brand) !important;
+}
+
+.bg-brand {
+  background-color: var(--color-brand) !important;
+  color: white;
+}
+
+.text-brand {
+  color: var(--color-brand) !important;
+}
+
+/* Status Badges */
+.badge-aman { background-color: var(--color-aman); color: white; }
+.badge-waspada { background-color: var(--color-waspada); color: #333; }
+.badge-siaga { background-color: var(--color-siaga); color: white; }
+.badge-awas { background-color: var(--color-awas); color: white; }
+
+/* Custom Buttons */
+.btn-brand {
+  background-color: var(--color-brand);
+  color: white;
+  border: none;
+}
+.btn-brand:hover {
+  background-color: #0b4f8c;
+  color: white;
+}
+
+.btn-awas {
+  background-color: var(--color-awas);
+  color: white;
+  border: none;
+}
+.btn-awas:hover {
+  background-color: #9c1f1f;
+  color: white;
+}
+
+/* Map Container */
+#map {
+  height: 500px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 1; /* Keep map below navbar */
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  border-radius: 12px 12px 0 0 !important;
+  font-weight: 600;
+}
